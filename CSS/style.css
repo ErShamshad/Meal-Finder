@@ -1,0 +1,148 @@
+/* CSS RESET */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* CSS variables */
+:root{
+    --navbar-height:59px;
+}
+
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo 2', cursive;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .4;
+}
+/* Navigation Bar: Logo and image */
+#logo{
+    margin: 10px 34px;
+}
+#logo img{
+height: 56px;
+margin: 3px 5px;
+} 
+
+/* NAvigation Bar: List Styling */
+#navbar ul{
+    display: flex;
+    align-items: ;
+}
+
+#navbar ul li{
+   list-style: none;
+   font-size: 1.3rem;
+
+}
+#navbar ul li a{
+display: block;
+padding: 3px 22px;
+border-radius: 20px;
+text-decoration: none;
+color: white;
+}
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+/* Home section */
+
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    height: 430px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background:url(/img/platter-2009590_960_720.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 78%;
+    width: 100%;
+    z-index: -1;
+    opacity: .88;
+    top: 0px;
+    left: 0px;}
+    #home h1{
+        text-align: center;
+        color: white;
+    }
+    #home p{
+        text-align: center;
+        color: white;
+        font-size: 1.5rem;
+    }
+    /* Services section */
+    #services{
+        margin: 34px;
+        display: flex;
+        height:200px;
+    }
+    #services .box{
+        border: 2px solid brown;
+        padding: 34px;
+        margin: 3px 6px;
+        background: rgb(241, 223, 223);
+        height: 185px;
+        border-radius: 100px;
+
+    }
+    #services .box img{ 
+        height: 53px;
+        display: block;
+        margin: auto;
+    }
+
+    /* Client Section */
+    #
+    #client-section{
+        /* height: 544px; */
+    }
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#clients img{
+  height:124px ;
+}
+
+/* Utility Classes */
+
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color:brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
